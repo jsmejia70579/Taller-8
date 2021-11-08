@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+
+        const ptitulo = <h1>Pagina Principal de Juan Jose Ospina</h1>;
+        const pparrafo = <p>Bienvenido a mi pagina personal. Soy un alumno de la Universidad de Manizales y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra informacion de interes</p>;
+
+        const stitulo = <h2>Enlaces Favoritos</h2>;
+        const slistaOrdenada = <ol> <li><a href="">Paginas personales </a></li>   <li>Paginas de referencia</li>   <li>Portales</li>   <li>Publicacion</li>  </ol>;
+
+        const ttitulo = <h2>Paginas personales</h2>;
+        const tlistaOrdenada = <ol> <li>Documentalistas  <ul> <li>Charkes F. Golfarb</li> <li>Lou Burnard</li> <li>Tim Berners-Lee</li> </ul>  </li>   <li>Historiadores</li>   <li>lingüstica</li>   <li>Traductores</li>  </ol>;
+
+        const ctitulo=<h2>Paginas de referencia </h2> ;
+       const clistaOrdenada=<ol> <li>Bibliotecas universitarias</li>  <li>Centros de documentacion </li>  <li>Museos de arte contemporaneo</li>  <li>Medios de comunicacion</li> </ol> ;
+
+        const qtitulo =<h2>Portales</h2> ;
+        const qlistaOrdenada = <ol> <li>Inicia</li> <li>Telepolis</li> <li>Ciudades</li> <li>Terra</li> </ol>;
+
+        const utitulo =<h2>Publicaciones</h2> ;
+        const ulistaOrdenada= <ol> <li>Ciberp@ís</li> <li>Diario Tecnologias de la Informacion</li> <li>The Standard</li> <li>Infoworld</li> <li>Wired</li> </ol>;
+const fin=<p><i>Juan Jose Ospina, Universidad de Manizales, Octubre 2021. </i></p>;
+
+        const element = (
+            <div>
+                {ptitulo}
+                {pparrafo}
+                {stitulo}
+                {slistaOrdenada}
+                <hr/>
+                {ttitulo}
+                {tlistaOrdenada}
+                <hr/>
+                {ctitulo}
+                {clistaOrdenada}
+                <hr/>
+                {qtitulo}
+                {qlistaOrdenada}
+                <hr/>
+                {utitulo}
+                {ulistaOrdenada}
+                <hr/>
+                {fin}
+            </div>
+
+        )
+
+        ReactDOM.render(element, document.getElementById("root"))
+    </script>
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</body>
+
+</html>

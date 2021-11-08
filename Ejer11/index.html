@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    const t1=<h1>Registro en nuestra tienda</h1>
+const formulario=<form>
+    <label>Nombre usuario</label>
+    <input placeholder="Ej: Name."></input>
+<br/><br/>
+    <label>Email</label>
+    <input placeholder="Ej: example@gmail.com"></input>
+    <br/>
+    <br/>
+    <label>Edad</label>
+    <input placeholder="Ej: 10"></input>
+    <br/>
+    <br/>
+    <label>Genero</label>
+    <select name="select" >
+        <option>Masculino</option>
+        <option>Femenino</option>
+        </select>
+        <br/>
+        <br/>
+    <label>Recomendado por:</label>
+    <select name="select" >
+        <option>Google</option>
+        <option>Otro</option>
+        </select>
+    <br/><br/>
+    <label>Comentarios</label>
+    <textarea  rows="10" cols="40"></textarea>
+    <br/>
+    <br/>
+    <label>Acepto terminos y condiciones</label>
+    <input type="checkbox"></input>
+    <br/>
+    <br/>
+    <button type="submint">Registrar</button>
+
+    </form>
+const element=(
+    <div>
+        {t1}
+        {formulario}
+        </div>
+)
+    
+    ReactDOM.render(element,document.getElementById("root"))
+    </script>
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</body>
+</html>

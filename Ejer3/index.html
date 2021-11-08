@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+const data={
+  titulo:'Pagina Principal de Juan Jose Ospina',
+  parrafo:'Bienvenido a mi pagina personal. Soy un alumno de la Universidad de Manizales y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otros intereses',
+  titulo2:'Enlaces Favoritos: ',
+  listaOrdenada1:'Internet',
+  listaOrdenada2:'Google',
+  listaOrdenada3:'Aldea Global',
+  listaOrdenada4:'Manual de HTML',
+  encabezado:'Juan Jose, Universidad de Manizales, Octubre 2021',
+}
+  
+const xtitulo=<h1>{data.titulo}</h1>;
+const xtitulo2=<h2>{data.titulo2}</h2>;
+const xparrafo=<p>{data.parrafo}</p>;
+const xlistaOrdenada=<ol> <li>{data.listaOrdenada1}</li>  <li><a target='_blank' href="https://www.google.com/">{data.listaOrdenada2}</a></li> <li>{data.listaOrdenada3}</li> <li><a target='_blank' href="https://desarrolloweb.com/">{data.listaOrdenada4}</a></li> </ol>;
+const xencabezado=<p><i>{data.encabezado}</i></p>;
+
+
+    const element=(
+<div>
+    {xtitulo}
+    {xparrafo}
+    {xtitulo2}
+    {xlistaOrdenada}
+    {xencabezado}
+    </div>
+
+    )
+
+ ReactDOM.render(element,document.getElementById("root"))
+    </script>
+
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</body>
+</html>

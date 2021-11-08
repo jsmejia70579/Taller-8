@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        console.log("hola")
+    
+    const data={
+    title_1:'Plato de la semana',
+    title_2:'Berenjenas fritas',
+    p_1:'Comensales: 4 personas',
+    p_2:'Tiempo de preparacion: 10 minutos',
+    p_3:'Tiempo de coccion: 12 minutos',
+    p_4:'Ingredientes:',
+    p_5:'4 berenjenas',
+    p_6:'sal',
+    p_7:'Pimienta',
+    p_8:'4 cucharadas de harina y aceite',
+    p_9:'Preparacion:',
+    p_10:'Lavar las berenjenas',
+    p_11:'Cortarlas en rodajas',
+    p_12:'Espolvorearla con sal',
+    p_13:'Dejar que suelten el agua durante 30 minutos',
+    p_14:'Enharizarlas, ponerlas a freir durante 5 minutos en aceite bien caliente.',
+    }
+    
+    const title_1x =<h1>{data.title_1}</h1> ;
+    const title_2x= <h2>{data.title_2}</h2>;
+    const p_1x=<p>{data.p_1}</p> ; 
+    const p_2x=<p>{data.p_2}</p> ;
+    const p_3x=<p>{data.p_3}</p> ;
+    const p_4x=<p>{data.p_4}</p> ;
+    const p_5x=<p>{data.p_5}<br/>{data.p_6}<br/>{data.p_7}<br/>{data.p_8}<br/>{data.p_9}</p> ;
+    const p_10x=<p>{data.p_10}<br/>{data.p_11}<br/>{data.p_12}<br/>{data.p_13}<br/>{data.p_14}</p> ;
+
+    
+    const element=
+    (
+    <div>
+    {title_1x}
+    {title_2x}
+    {p_1x}
+    {p_2x}
+    {p_3x}
+    {p_4x}
+    {p_5x}
+    
+    {p_10x}
+  
+    
+    </div>
+    
+    
+    )
+    ReactDOM.render(element,document.getElementById('root'))
+    
+        </script>
+    
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+</body>
+
+</html>

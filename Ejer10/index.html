@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        #listaol li {
+            display: inline;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+
+
+        const titulo =
+            <div className="container ">
+                <div className="row">
+                    <div class="col">
+                        <img src="https://static9.depositphotos.com/1621958/1180/i/950/depositphotos_11803523-stock-photo-chef-hat-icon-isolated.jpg" width="10%"></img>
+                    </div>
+                    <div class="col">
+                        <p><strong>Recetas.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        const lista = <ol id="listaol"> <a href=""><li>Recetas Principales</li></a> | <a href=""><li>Postres Latinos</li></a> </ol>;
+        const parrafo1 = <p>Bienvenido a nuestro sitio web de gastronomia latina, te invitamos a preparar nuestras recetas</p>
+        const t1=<h2>Nuevas Recetas</h2>
+        const t2=<h3>**Arroz Criollo**</h3>
+        const p1=<p>Tiempo de preparacion: <strong>45 minutos</strong> Numero de porciones <strong>4</strong> </p>
+        const p2=<p><strong>Ingredientes</strong> </p>
+        const lista1= <ul> 
+            <li>Salsa de tomate</li>  
+            <li>2 cucharadas de aceite 14gr</li>
+            <li>1 cebolla larga 45gr</li>
+            <li>2 dientes de ajo finamente picado 3gr</li>
+            <li>1 pimenton rojo picado en cuadritos 60gr</li>
+            <li>1 taza arroz blanco 225gr</li>
+            <li>1 taza de maiz desgranado 79gr</li>
+            <li>150gr de pechuga de pollo cocinado y desmechado</li>
+            <li>sal al gusto</li>
+            </ul>
+            const p3=<p><strong>Preparacion</strong> </p>
+            const lista2=<ol> 
+            <li>Calentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimenton por 3 mintuos</li>  
+            <li>Adicionar  el arroz y continua sofriendo para que se dore</li>
+            <li>Agregar el pollo, el maiz desgranado y las verduras</li>
+            <li>Mezclar todo, rectificar sal y dejar cocinar hasta que se seque</li>
+            <li>Bajar el fuego, tapar la olla y continuar la coccion por 25 minutos mas</li>
+            
+            
+            </ol>
+        
+        const p4=<p>Esta rica receta fue proporcionada por Maria Paula</p>
+        
+        const element = (
+            <div>
+                {titulo}
+                {lista}
+                {parrafo1}
+                {t1}
+                {t2}
+                {p1}
+                {p2}
+                {lista1}
+                {p3}
+                {lista2}
+                {p4}
+            </div>
+        )
+
+        ReactDOM.render(element, document.getElementById("root"))
+    </script>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
